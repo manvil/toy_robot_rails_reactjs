@@ -1,0 +1,62 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$clr-grey: #aaa;
+$clr-robot: #f00;
+$box-size: 50px;
+$box-half-size: 25px;
+
+.table-top {
+  left: 30px;
+  position: relative;
+
+  .unit-box {
+    background: $clr-grey;
+    height: $box-size;
+    margin: 1px;
+    width: $box-size;
+  }
+
+  .robot {
+    &.north {
+      border-bottom: $box-size solid $clr-robot;
+      border-left: $box-half-size solid transparent;
+      border-right: $box-half-size solid transparent;
+      height: 0;
+      width: 0;
+    }
+
+    &.south {
+      border-left: $box-half-size solid transparent;
+      border-right: $box-half-size solid transparent;
+      border-top: $box-size solid $clr-robot;
+      height: 0;
+      width: 0;
+    }
+
+    &.west {
+      border-bottom: $box-half-size solid transparent;
+      border-right: $box-size solid $clr-robot;
+      border-top: $box-half-size solid transparent;
+      height: 0;
+      width: 0;
+    }
+
+    &.east {
+      border-bottom: $box-half-size solid transparent;
+      border-left: $box-size solid $clr-robot;
+      border-top: $box-half-size solid transparent;
+      height: 0;
+      width: 0;
+    }
+  }
+}
+
+.entire-width {
+  width: 100%;
+}
+
+.bottom-fixed {
+  bottom: 0;
+  position: fixed;
+}

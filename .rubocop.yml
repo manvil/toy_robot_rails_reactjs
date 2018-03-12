@@ -1,0 +1,21 @@
+Metrics/LineLength:
+  Max: 150
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'node_modules/**/*'
+
+Naming/FileName:
+  Exclude:
+    - 'Gemfile'
+    - 'Rakefile'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
